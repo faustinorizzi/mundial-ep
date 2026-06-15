@@ -2,37 +2,37 @@
 
 // ========== EQUIPOS ==========
 var TEAMS = {
-  "Mexico":{en:"Mexico",code:"mx",abbr:"MEX",group:"A"},
-  "Sudafrica":{en:"South Africa",code:"za",abbr:"RSA",group:"A"},
+  "México":{en:"Mexico",code:"mx",abbr:"MEX",group:"A"},
+  "Sudáfrica":{en:"South Africa",code:"za",abbr:"RSA",group:"A"},
   "Corea del Sur":{en:"South Korea",code:"kr",abbr:"KOR",group:"A"},
   "Rep. Checa":{en:"Czechia",code:"cz",abbr:"CZE",group:"A"},
-  "Canada":{en:"Canada",code:"ca",abbr:"CAN",group:"B"},
+  "Canadá":{en:"Canada",code:"ca",abbr:"CAN",group:"B"},
   "Bosnia":{en:"Bosnia and Herzegovina",code:"ba",abbr:"BIH",group:"B"},
   "Qatar":{en:"Qatar",code:"qa",abbr:"QAT",group:"B"},
   "Suiza":{en:"Switzerland",code:"ch",abbr:"SUI",group:"B"},
   "Brasil":{en:"Brazil",code:"br",abbr:"BRA",group:"C"},
   "Marruecos":{en:"Morocco",code:"ma",abbr:"MAR",group:"C"},
-  "Haiti":{en:"Haiti",code:"ht",abbr:"HAI",group:"C"},
+  "Haití":{en:"Haiti",code:"ht",abbr:"HAI",group:"C"},
   "Escocia":{en:"Scotland",code:"gb-sct",abbr:"SCO",group:"C"},
   "Estados Unidos":{en:"United States",code:"us",abbr:"USA",group:"D"},
   "Paraguay":{en:"Paraguay",code:"py",abbr:"PAR",group:"D"},
   "Australia":{en:"Australia",code:"au",abbr:"AUS",group:"D"},
-  "Turquia":{en:"Turkey",code:"tr",abbr:"TUR",group:"D"},
+  "Turquía":{en:"Turkey",code:"tr",abbr:"TUR",group:"D"},
   "Alemania":{en:"Germany",code:"de",abbr:"GER",group:"E"},
   "Curazao":{en:"Curacao",code:"cw",abbr:"CUW",group:"E"},
   "Costa de Marfil":{en:"Ivory Coast",code:"ci",abbr:"CIV",group:"E"},
   "Ecuador":{en:"Ecuador",code:"ec",abbr:"ECU",group:"E"},
-  "Paises Bajos":{en:"Netherlands",code:"nl",abbr:"NED",group:"F"},
-  "Japon":{en:"Japan",code:"jp",abbr:"JPN",group:"F"},
+  "Países Bajos":{en:"Netherlands",code:"nl",abbr:"NED",group:"F"},
+  "Japón":{en:"Japan",code:"jp",abbr:"JPN",group:"F"},
   "Suecia":{en:"Sweden",code:"se",abbr:"SWE",group:"F"},
-  "Tunez":{en:"Tunisia",code:"tn",abbr:"TUN",group:"F"},
-  "Espana":{en:"Spain",code:"es",abbr:"ESP",group:"G"},
+  "Túnez":{en:"Tunisia",code:"tn",abbr:"TUN",group:"F"},
+  "España":{en:"Spain",code:"es",abbr:"ESP",group:"G"},
   "Cabo Verde":{en:"Cape Verde",code:"cv",abbr:"CPV",group:"G"},
   "Arabia Saudita":{en:"Saudi Arabia",code:"sa",abbr:"KSA",group:"G"},
   "Uruguay":{en:"Uruguay",code:"uy",abbr:"URU",group:"G"},
-  "Belgica":{en:"Belgium",code:"be",abbr:"BEL",group:"H"},
+  "Bélgica":{en:"Belgium",code:"be",abbr:"BEL",group:"H"},
   "Egipto":{en:"Egypt",code:"eg",abbr:"EGY",group:"H"},
-  "Iran":{en:"Iran",code:"ir",abbr:"IRN",group:"H"},
+  "Irán":{en:"Iran",code:"ir",abbr:"IRN",group:"H"},
   "Nueva Zelanda":{en:"New Zealand",code:"nz",abbr:"NZL",group:"H"},
   "Francia":{en:"France",code:"fr",abbr:"FRA",group:"I"},
   "Senegal":{en:"Senegal",code:"sn",abbr:"SEN",group:"I"},
@@ -44,12 +44,12 @@ var TEAMS = {
   "Jordania":{en:"Jordan",code:"jo",abbr:"JOR",group:"J"},
   "Portugal":{en:"Portugal",code:"pt",abbr:"POR",group:"K"},
   "Congo":{en:"DR Congo",code:"cd",abbr:"COD",group:"K"},
-  "Uzbekistan":{en:"Uzbekistan",code:"uz",abbr:"UZB",group:"K"},
+  "Uzbekistán":{en:"Uzbekistan",code:"uz",abbr:"UZB",group:"K"},
   "Colombia":{en:"Colombia",code:"co",abbr:"COL",group:"K"},
   "Inglaterra":{en:"England",code:"gb-eng",abbr:"ENG",group:"L"},
   "Croacia":{en:"Croatia",code:"hr",abbr:"CRO",group:"L"},
   "Ghana":{en:"Ghana",code:"gh",abbr:"GHA",group:"L"},
-  "Panama":{en:"Panama",code:"pa",abbr:"PAN",group:"L"}
+  "Panamá":{en:"Panama",code:"pa",abbr:"PAN",group:"L"}
 };
 
 // ========== FIXTURE ==========
@@ -58,10 +58,10 @@ var FIXTURE = [
   {f:"11/06",dia:"JUE",hora:"23:00",nota:"",a:"Corea del Sur",b:"Rep. Checa",canal:"DSports / TyC",arg:false},
   {f:"12/06",dia:"VIE",hora:"16:00",nota:"",a:"Canada",b:"Bosnia",canal:"DSports",arg:false},
   {f:"12/06",dia:"VIE",hora:"22:00",nota:"",a:"Estados Unidos",b:"Paraguay",canal:"DSports / TyC / Disney+",arg:false},
-  {f:"13/06",dia:"SAB",hora:"16:00",nota:"",a:"Qatar",b:"Suiza",canal:"DSports",arg:false},
-  {f:"13/06",dia:"SAB",hora:"19:00",nota:"",a:"Brasil",b:"Marruecos",canal:"DSports / Disney+",arg:false},
-  {f:"13/06",dia:"SAB",hora:"22:00",nota:"",a:"Haiti",b:"Escocia",canal:"DSports / TyC",arg:false},
-  {f:"13/06",dia:"SAB",hora:"01:00",nota:"madrugada dom.",a:"Australia",b:"Turquia",canal:"DSports / TyC",arg:false},
+  {f:"13/06",dia:"SÁB",hora:"16:00",nota:"",a:"Qatar",b:"Suiza",canal:"DSports",arg:false},
+  {f:"13/06",dia:"SÁB",hora:"19:00",nota:"",a:"Brasil",b:"Marruecos",canal:"DSports / Disney+",arg:false},
+  {f:"13/06",dia:"SÁB",hora:"22:00",nota:"",a:"Haiti",b:"Escocia",canal:"DSports / TyC",arg:false},
+  {f:"13/06",dia:"SÁB",hora:"01:00",nota:"madrugada dom.",a:"Australia",b:"Turquia",canal:"DSports / TyC",arg:false},
   {f:"14/06",dia:"DOM",hora:"14:00",nota:"",a:"Alemania",b:"Curazao",canal:"DSports",arg:false},
   {f:"14/06",dia:"DOM",hora:"17:00",nota:"",a:"Paises Bajos",b:"Japon",canal:"DSports 2 / TyC / Disney+",arg:false},
   {f:"14/06",dia:"DOM",hora:"20:00",nota:"",a:"Costa de Marfil",b:"Ecuador",canal:"DSports / Disney+",arg:false},
@@ -73,11 +73,11 @@ var FIXTURE = [
   {f:"16/06",dia:"MAR",hora:"16:00",nota:"",a:"Francia",b:"Senegal",canal:"DSports",arg:false},
   {f:"16/06",dia:"MAR",hora:"19:00",nota:"",a:"Irak",b:"Noruega",canal:"DSports 2 / TyC",arg:false},
   {f:"16/06",dia:"MAR",hora:"22:00",nota:"",a:"Argentina",b:"Argelia",canal:"DSports / TyC / Disney+ / TVP / Telefe",arg:true},
-  {f:"16/06",dia:"MAR",hora:"01:00",nota:"madrugada mie.",a:"Austria",b:"Jordania",canal:"DSports / TyC",arg:false},
-  {f:"17/06",dia:"MIE",hora:"14:00",nota:"",a:"Portugal",b:"Congo",canal:"DSports",arg:false},
-  {f:"17/06",dia:"MIE",hora:"17:00",nota:"",a:"Inglaterra",b:"Croacia",canal:"DSports / TyC / Disney+",arg:false},
-  {f:"17/06",dia:"MIE",hora:"20:00",nota:"",a:"Ghana",b:"Panama",canal:"DSports 2 / TyC",arg:false},
-  {f:"17/06",dia:"MIE",hora:"23:00",nota:"",a:"Uzbekistan",b:"Colombia",canal:"DSports / TyC",arg:false},
+  {f:"16/06",dia:"MAR",hora:"01:00",nota:"madrugada MIÉ.",a:"Austria",b:"Jordania",canal:"DSports / TyC",arg:false},
+  {f:"17/06",dia:"MIÉ",hora:"14:00",nota:"",a:"Portugal",b:"Congo",canal:"DSports",arg:false},
+  {f:"17/06",dia:"MIÉ",hora:"17:00",nota:"",a:"Inglaterra",b:"Croacia",canal:"DSports / TyC / Disney+",arg:false},
+  {f:"17/06",dia:"MIÉ",hora:"20:00",nota:"",a:"Ghana",b:"Panama",canal:"DSports 2 / TyC",arg:false},
+  {f:"17/06",dia:"MIÉ",hora:"23:00",nota:"",a:"Uzbekistan",b:"Colombia",canal:"DSports / TyC",arg:false},
   {f:"18/06",dia:"JUE",hora:"13:00",nota:"",a:"Rep. Checa",b:"Sudafrica",canal:"DSports / TyC",arg:false},
   {f:"18/06",dia:"JUE",hora:"16:00",nota:"",a:"Suiza",b:"Bosnia",canal:"DSports / Disney+",arg:false},
   {f:"18/06",dia:"JUE",hora:"19:00",nota:"",a:"Canada",b:"Qatar",canal:"DSports",arg:false},
@@ -86,10 +86,10 @@ var FIXTURE = [
   {f:"19/06",dia:"VIE",hora:"19:00",nota:"",a:"Escocia",b:"Marruecos",canal:"DSports / Disney+",arg:false},
   {f:"19/06",dia:"VIE",hora:"21:30",nota:"",a:"Brasil",b:"Haiti",canal:"DSports / TyC",arg:false},
   {f:"19/06",dia:"VIE",hora:"24:00",nota:"",a:"Turquia",b:"Paraguay",canal:"DSports",arg:false},
-  {f:"20/06",dia:"SAB",hora:"14:00",nota:"",a:"Paises Bajos",b:"Suecia",canal:"DSports / TyC",arg:false},
-  {f:"20/06",dia:"SAB",hora:"17:00",nota:"",a:"Alemania",b:"Costa de Marfil",canal:"DSports / TyC / Disney+",arg:false},
-  {f:"20/06",dia:"SAB",hora:"21:00",nota:"",a:"Ecuador",b:"Curazao",canal:"DSports",arg:false},
-  {f:"20/06",dia:"SAB",hora:"01:00",nota:"madrugada dom.",a:"Tunez",b:"Japon",canal:"DSports",arg:false},
+  {f:"20/06",dia:"SÁB",hora:"14:00",nota:"",a:"Paises Bajos",b:"Suecia",canal:"DSports / TyC",arg:false},
+  {f:"20/06",dia:"SÁB",hora:"17:00",nota:"",a:"Alemania",b:"Costa de Marfil",canal:"DSports / TyC / Disney+",arg:false},
+  {f:"20/06",dia:"SÁB",hora:"21:00",nota:"",a:"Ecuador",b:"Curazao",canal:"DSports",arg:false},
+  {f:"20/06",dia:"SÁB",hora:"01:00",nota:"madrugada dom.",a:"Tunez",b:"Japon",canal:"DSports",arg:false},
   {f:"21/06",dia:"DOM",hora:"13:00",nota:"",a:"Espana",b:"Arabia Saudita",canal:"DSports / TyC / Disney+",arg:false},
   {f:"21/06",dia:"DOM",hora:"16:00",nota:"",a:"Belgica",b:"Iran",canal:"DSports 2",arg:false},
   {f:"21/06",dia:"DOM",hora:"19:00",nota:"",a:"Uruguay",b:"Cabo Verde",canal:"DSports / Disney+",arg:false},
@@ -102,12 +102,12 @@ var FIXTURE = [
   {f:"23/06",dia:"MAR",hora:"17:00",nota:"",a:"Inglaterra",b:"Ghana",canal:"DSports / Disney+",arg:false},
   {f:"23/06",dia:"MAR",hora:"20:00",nota:"",a:"Panama",b:"Croacia",canal:"DSports 2 / TyC",arg:false},
   {f:"23/06",dia:"MAR",hora:"23:00",nota:"",a:"Colombia",b:"Congo",canal:"DSports",arg:false},
-  {f:"24/06",dia:"MIE",hora:"16:00",nota:"",a:"Suiza",b:"Canada",canal:"DSports / TyC",arg:false},
-  {f:"24/06",dia:"MIE",hora:"16:00",nota:"",a:"Bosnia",b:"Qatar",canal:"DSports 2",arg:false},
-  {f:"24/06",dia:"MIE",hora:"19:00",nota:"",a:"Escocia",b:"Brasil",canal:"DSports / Disney+",arg:false},
-  {f:"24/06",dia:"MIE",hora:"19:00",nota:"",a:"Marruecos",b:"Haiti",canal:"DSports+ / TyC",arg:false},
-  {f:"24/06",dia:"MIE",hora:"22:00",nota:"",a:"Rep. Checa",b:"Mexico",canal:"DSports",arg:false},
-  {f:"24/06",dia:"MIE",hora:"22:00",nota:"",a:"Sudafrica",b:"Corea del Sur",canal:"DSports+ / TyC",arg:false},
+  {f:"24/06",dia:"MIÉ",hora:"16:00",nota:"",a:"Suiza",b:"Canada",canal:"DSports / TyC",arg:false},
+  {f:"24/06",dia:"MIÉ",hora:"16:00",nota:"",a:"Bosnia",b:"Qatar",canal:"DSports 2",arg:false},
+  {f:"24/06",dia:"MIÉ",hora:"19:00",nota:"",a:"Escocia",b:"Brasil",canal:"DSports / Disney+",arg:false},
+  {f:"24/06",dia:"MIÉ",hora:"19:00",nota:"",a:"Marruecos",b:"Haiti",canal:"DSports+ / TyC",arg:false},
+  {f:"24/06",dia:"MIÉ",hora:"22:00",nota:"",a:"Rep. Checa",b:"Mexico",canal:"DSports",arg:false},
+  {f:"24/06",dia:"MIÉ",hora:"22:00",nota:"",a:"Sudafrica",b:"Corea del Sur",canal:"DSports+ / TyC",arg:false},
   {f:"25/06",dia:"JUE",hora:"17:00",nota:"",a:"Ecuador",b:"Alemania",canal:"DSports / TyC / Disney+",arg:false},
   {f:"25/06",dia:"JUE",hora:"17:00",nota:"",a:"Curazao",b:"Costa de Marfil",canal:"DSports 2",arg:false},
   {f:"25/06",dia:"JUE",hora:"20:00",nota:"",a:"Tunez",b:"Paises Bajos",canal:"DSports / TVP",arg:false},
@@ -120,19 +120,19 @@ var FIXTURE = [
   {f:"26/06",dia:"VIE",hora:"21:00",nota:"",a:"Cabo Verde",b:"Arabia Saudita",canal:"DSports 2",arg:false},
   {f:"26/06",dia:"VIE",hora:"24:00",nota:"",a:"Nueva Zelanda",b:"Belgica",canal:"DSports",arg:false},
   {f:"26/06",dia:"VIE",hora:"24:00",nota:"",a:"Egipto",b:"Iran",canal:"DSports+ / TyC",arg:false},
-  {f:"27/06",dia:"SAB",hora:"18:00",nota:"",a:"Panama",b:"Inglaterra",canal:"DSports / TyC / TVP",arg:false},
-  {f:"27/06",dia:"SAB",hora:"18:00",nota:"",a:"Croacia",b:"Ghana",canal:"DSports+ / Flow / RED",arg:false},
-  {f:"27/06",dia:"SAB",hora:"20:30",nota:"",a:"Colombia",b:"Portugal",canal:"DSports 2",arg:false},
-  {f:"27/06",dia:"SAB",hora:"20:30",nota:"",a:"Congo",b:"Uzbekistan",canal:"DSports+ / TyC",arg:false},
-  {f:"27/06",dia:"SAB",hora:"23:00",nota:"",a:"Jordania",b:"Argentina",canal:"DSports / TyC / Disney+",arg:true},
-  {f:"27/06",dia:"SAB",hora:"23:00",nota:"",a:"Argelia",b:"Austria",canal:"DSports+ / Flow / RED",arg:false}
+  {f:"27/06",dia:"SÁB",hora:"18:00",nota:"",a:"Panama",b:"Inglaterra",canal:"DSports / TyC / TVP",arg:false},
+  {f:"27/06",dia:"SÁB",hora:"18:00",nota:"",a:"Croacia",b:"Ghana",canal:"DSports+ / Flow / RED",arg:false},
+  {f:"27/06",dia:"SÁB",hora:"20:30",nota:"",a:"Colombia",b:"Portugal",canal:"DSports 2",arg:false},
+  {f:"27/06",dia:"SÁB",hora:"20:30",nota:"",a:"Congo",b:"Uzbekistan",canal:"DSports+ / TyC",arg:false},
+  {f:"27/06",dia:"SÁB",hora:"23:00",nota:"",a:"Jordania",b:"Argentina",canal:"DSports / TyC / Disney+",arg:true},
+  {f:"27/06",dia:"SÁB",hora:"23:00",nota:"",a:"Argelia",b:"Austria",canal:"DSports+ / Flow / RED",arg:false}
 ];
 
 // ========== FECHAS ==========
 var FECHAS_GRUPO = [];
 for (var d = 11; d <= 27; d++) {
   var fecha = new Date(2026, 5, d);
-  var dias = ["DOM","LUN","MAR","MIE","JUE","VIE","SAB"];
+  var dias = ["DOM","LUN","MAR","MIÉ","JUE","VIE","SÁB"];
   var ff = String(d).padStart(2,'0') + "/06";
   FECHAS_GRUPO.push({
     fecha: ff, num: d, dia: dias[fecha.getDay()], mes: "JUN",
@@ -201,7 +201,7 @@ function getMatchInfo(espnEvent) {
   var st = comp.status.type;
   var home = comp.competitors.find(function(c){return c.homeAway==='home'});
   var away = comp.competitors.find(function(c){return c.homeAway==='away'});
-  var venue = comp.venue ? (comp.venue.fullName + ', ' + (comp.venue.address ? comp.venue.address.city : '')) : '';
+  var venue = comp.venue && comp.venue.address ? comp.venue.address.city : '';
 
   var result = {
     homeAbbr: home.team.abbreviation,
