@@ -94,9 +94,9 @@ var FIXTURE = [
   {f:"01/07",hora:"13:00",a:"Inglaterra",b:"Congo",fase:"Dieciseisavos"},
   {f:"01/07",hora:"17:00",a:"Bélgica",b:"Senegal",fase:"Dieciseisavos"},
   {f:"01/07",hora:"21:00",a:"Estados Unidos",b:"Bosnia",fase:"Dieciseisavos"},
-  {f:"02/07",hora:"16:00",a:"España",b:"2J",fase:"Dieciseisavos"},
+  {f:"02/07",hora:"16:00",a:"España",b:"Austria",fase:"Dieciseisavos"},
   {f:"02/07",hora:"20:00",a:"Portugal",b:"Croacia",fase:"Dieciseisavos"},
-  {f:"03/07",hora:"00:00",a:"Suiza",b:"3EFGIJ",fase:"Dieciseisavos"},
+  {f:"03/07",hora:"00:00",a:"Suiza",b:"Argelia",fase:"Dieciseisavos"},
   {f:"03/07",hora:"15:00",a:"Australia",b:"Egipto",fase:"Dieciseisavos"},
   {f:"03/07",hora:"19:00",a:"Argentina",b:"Cabo Verde",fase:"Dieciseisavos"},
   {f:"03/07",hora:"22:30",a:"Colombia",b:"Ghana",fase:"Dieciseisavos"}
