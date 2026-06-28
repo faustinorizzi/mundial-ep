@@ -2,169 +2,140 @@
 
 // ========== EQUIPOS ==========
 var TEAMS = {
-  "México":{en:"Mexico",code:"mx",abbr:"MEX",group:"A"},
-  "Sudáfrica":{en:"South Africa",code:"za",abbr:"RSA",group:"A"},
-  "Corea del Sur":{en:"South Korea",code:"kr",abbr:"KOR",group:"A"},
-  "Rep. Checa":{en:"Czechia",code:"cz",abbr:"CZE",group:"A"},
-  "Canadá":{en:"Canada",code:"ca",abbr:"CAN",group:"B"},
-  "Bosnia":{en:"Bosnia and Herzegovina",code:"ba",abbr:"BIH",group:"B"},
-  "Qatar":{en:"Qatar",code:"qa",abbr:"QAT",group:"B"},
-  "Suiza":{en:"Switzerland",code:"ch",abbr:"SUI",group:"B"},
-  "Brasil":{en:"Brazil",code:"br",abbr:"BRA",group:"C"},
-  "Marruecos":{en:"Morocco",code:"ma",abbr:"MAR",group:"C"},
-  "Haití":{en:"Haiti",code:"ht",abbr:"HAI",group:"C"},
-  "Escocia":{en:"Scotland",code:"gb-sct",abbr:"SCO",group:"C"},
-  "Estados Unidos":{en:"United States",code:"us",abbr:"USA",group:"D"},
-  "Paraguay":{en:"Paraguay",code:"py",abbr:"PAR",group:"D"},
-  "Australia":{en:"Australia",code:"au",abbr:"AUS",group:"D"},
-  "Turquía":{en:"Turkey",code:"tr",abbr:"TUR",group:"D"},
-  "Alemania":{en:"Germany",code:"de",abbr:"GER",group:"E"},
-  "Curazao":{en:"Curacao",code:"cw",abbr:"CUW",group:"E"},
-  "Costa de Marfil":{en:"Ivory Coast",code:"ci",abbr:"CIV",group:"E"},
-  "Ecuador":{en:"Ecuador",code:"ec",abbr:"ECU",group:"E"},
-  "Países Bajos":{en:"Netherlands",code:"nl",abbr:"NED",group:"F"},
-  "Japón":{en:"Japan",code:"jp",abbr:"JPN",group:"F"},
-  "Suecia":{en:"Sweden",code:"se",abbr:"SWE",group:"F"},
-  "Túnez":{en:"Tunisia",code:"tn",abbr:"TUN",group:"F"},
-  "España":{en:"Spain",code:"es",abbr:"ESP",group:"G"},
-  "Cabo Verde":{en:"Cape Verde",code:"cv",abbr:"CPV",group:"G"},
-  "Arabia Saudita":{en:"Saudi Arabia",code:"sa",abbr:"KSA",group:"G"},
-  "Uruguay":{en:"Uruguay",code:"uy",abbr:"URU",group:"G"},
-  "Bélgica":{en:"Belgium",code:"be",abbr:"BEL",group:"H"},
-  "Egipto":{en:"Egypt",code:"eg",abbr:"EGY",group:"H"},
-  "Irán":{en:"Iran",code:"ir",abbr:"IRN",group:"H"},
-  "Nueva Zelanda":{en:"New Zealand",code:"nz",abbr:"NZL",group:"H"},
-  "Francia":{en:"France",code:"fr",abbr:"FRA",group:"I"},
-  "Senegal":{en:"Senegal",code:"sn",abbr:"SEN",group:"I"},
-  "Irak":{en:"Iraq",code:"iq",abbr:"IRQ",group:"I"},
-  "Noruega":{en:"Norway",code:"no",abbr:"NOR",group:"I"},
-  "Argentina":{en:"Argentina",code:"ar",abbr:"ARG",group:"J"},
-  "Argelia":{en:"Algeria",code:"dz",abbr:"ALG",group:"J"},
-  "Austria":{en:"Austria",code:"at",abbr:"AUT",group:"J"},
-  "Jordania":{en:"Jordan",code:"jo",abbr:"JOR",group:"J"},
-  "Portugal":{en:"Portugal",code:"pt",abbr:"POR",group:"K"},
-  "Congo":{en:"DR Congo",code:"cd",abbr:"COD",group:"K"},
-  "Uzbekistán":{en:"Uzbekistan",code:"uz",abbr:"UZB",group:"K"},
-  "Colombia":{en:"Colombia",code:"co",abbr:"COL",group:"K"},
-  "Inglaterra":{en:"England",code:"gb-eng",abbr:"ENG",group:"L"},
-  "Croacia":{en:"Croatia",code:"hr",abbr:"CRO",group:"L"},
-  "Ghana":{en:"Ghana",code:"gh",abbr:"GHA",group:"L"},
-  "Panamá":{en:"Panama",code:"pa",abbr:"PAN",group:"L"}
+  "México":{en:"Mexico",code:"mx",abbr:"MEX"},
+  "Sudáfrica":{en:"South Africa",code:"za",abbr:"RSA"},
+  "Corea del Sur":{en:"South Korea",code:"kr",abbr:"KOR"},
+  "Rep. Checa":{en:"Czechia",code:"cz",abbr:"CZE"},
+  "Canadá":{en:"Canada",code:"ca",abbr:"CAN"},
+  "Bosnia":{en:"Bosnia and Herzegovina",code:"ba",abbr:"BIH"},
+  "Qatar":{en:"Qatar",code:"qa",abbr:"QAT"},
+  "Suiza":{en:"Switzerland",code:"ch",abbr:"SUI"},
+  "Brasil":{en:"Brazil",code:"br",abbr:"BRA"},
+  "Marruecos":{en:"Morocco",code:"ma",abbr:"MAR"},
+  "Haití":{en:"Haiti",code:"ht",abbr:"HAI"},
+  "Escocia":{en:"Scotland",code:"gb-sct",abbr:"SCO"},
+  "Estados Unidos":{en:"United States",code:"us",abbr:"USA"},
+  "Paraguay":{en:"Paraguay",code:"py",abbr:"PAR"},
+  "Australia":{en:"Australia",code:"au",abbr:"AUS"},
+  "Turquía":{en:"Turkey",code:"tr",abbr:"TUR"},
+  "Alemania":{en:"Germany",code:"de",abbr:"GER"},
+  "Curazao":{en:"Curacao",code:"cw",abbr:"CUW"},
+  "Costa de Marfil":{en:"Ivory Coast",code:"ci",abbr:"CIV"},
+  "Ecuador":{en:"Ecuador",code:"ec",abbr:"ECU"},
+  "Países Bajos":{en:"Netherlands",code:"nl",abbr:"NED"},
+  "Japón":{en:"Japan",code:"jp",abbr:"JPN"},
+  "Suecia":{en:"Sweden",code:"se",abbr:"SWE"},
+  "Túnez":{en:"Tunisia",code:"tn",abbr:"TUN"},
+  "España":{en:"Spain",code:"es",abbr:"ESP"},
+  "Cabo Verde":{en:"Cape Verde",code:"cv",abbr:"CPV"},
+  "Arabia Saudita":{en:"Saudi Arabia",code:"sa",abbr:"KSA"},
+  "Uruguay":{en:"Uruguay",code:"uy",abbr:"URU"},
+  "Bélgica":{en:"Belgium",code:"be",abbr:"BEL"},
+  "Egipto":{en:"Egypt",code:"eg",abbr:"EGY"},
+  "Irán":{en:"Iran",code:"ir",abbr:"IRN"},
+  "Nueva Zelanda":{en:"New Zealand",code:"nz",abbr:"NZL"},
+  "Francia":{en:"France",code:"fr",abbr:"FRA"},
+  "Senegal":{en:"Senegal",code:"sn",abbr:"SEN"},
+  "Irak":{en:"Iraq",code:"iq",abbr:"IRQ"},
+  "Noruega":{en:"Norway",code:"no",abbr:"NOR"},
+  "Argentina":{en:"Argentina",code:"ar",abbr:"ARG"},
+  "Argelia":{en:"Algeria",code:"dz",abbr:"ALG"},
+  "Austria":{en:"Austria",code:"at",abbr:"AUT"},
+  "Jordania":{en:"Jordan",code:"jo",abbr:"JOR"},
+  "Portugal":{en:"Portugal",code:"pt",abbr:"POR"},
+  "Congo":{en:"DR Congo",code:"cd",abbr:"COD"},
+  "Uzbekistán":{en:"Uzbekistan",code:"uz",abbr:"UZB"},
+  "Colombia":{en:"Colombia",code:"co",abbr:"COL"},
+  "Inglaterra":{en:"England",code:"gb-eng",abbr:"ENG"},
+  "Croacia":{en:"Croatia",code:"hr",abbr:"CRO"},
+  "Ghana":{en:"Ghana",code:"gh",abbr:"GHA"},
+  "Panamá":{en:"Panama",code:"pa",abbr:"PAN"}
 };
 
-// ========== FIXTURE ==========
-var FIXTURE = [
-  {f:"11/06",dia:"JUE",hora:"16:00",nota:"",a:"México",b:"Sudáfrica",canal:"DSports / Telefe / Disney+",arg:false},
-  {f:"11/06",dia:"JUE",hora:"23:00",nota:"",a:"Corea del Sur",b:"Rep. Checa",canal:"DSports / TyC",arg:false},
-  {f:"12/06",dia:"VIE",hora:"16:00",nota:"",a:"Canadá",b:"Bosnia",canal:"DSports",arg:false},
-  {f:"12/06",dia:"VIE",hora:"22:00",nota:"",a:"Estados Unidos",b:"Paraguay",canal:"DSports / TyC / Telefe / Disney+",arg:false},
-  {f:"13/06",dia:"SÁB",hora:"16:00",nota:"",a:"Qatar",b:"Suiza",canal:"DSports",arg:false},
-  {f:"13/06",dia:"SÁB",hora:"19:00",nota:"",a:"Brasil",b:"Marruecos",canal:"DSports / TyC / Telefe / Disney+",arg:false},
-  {f:"13/06",dia:"SÁB",hora:"22:00",nota:"",a:"Haití",b:"Escocia",canal:"DSports / TyC",arg:false},
-  {f:"13/06",dia:"SÁB",hora:"01:00",nota:"madrugada dom.",a:"Australia",b:"Turquía",canal:"DSports / TyC",arg:false},
-  {f:"14/06",dia:"DOM",hora:"14:00",nota:"",a:"Alemania",b:"Curazao",canal:"DSports",arg:false},
-  {f:"14/06",dia:"DOM",hora:"17:00",nota:"",a:"Países Bajos",b:"Japón",canal:"DSports / TyC / Telefe / Disney+",arg:false},
-  {f:"14/06",dia:"DOM",hora:"20:00",nota:"",a:"Costa de Marfil",b:"Ecuador",canal:"DSports / TyC / Telefe / Disney+",arg:false},
-  {f:"14/06",dia:"DOM",hora:"23:00",nota:"",a:"Suecia",b:"Túnez",canal:"DSports / TyC",arg:false},
-  {f:"15/06",dia:"LUN",hora:"13:00",nota:"",a:"España",b:"Cabo Verde",canal:"DSports",arg:false},
-  {f:"15/06",dia:"LUN",hora:"16:00",nota:"",a:"Bélgica",b:"Egipto",canal:"DSports 2 / TyC",arg:false},
-  {f:"15/06",dia:"LUN",hora:"19:00",nota:"",a:"Arabia Saudita",b:"Uruguay",canal:"DSports / TyC / Telefe / Disney+",arg:false},
-  {f:"15/06",dia:"LUN",hora:"22:00",nota:"",a:"Irán",b:"Nueva Zelanda",canal:"DSports / TyC",arg:false},
-  {f:"16/06",dia:"MAR",hora:"16:00",nota:"",a:"Francia",b:"Senegal",canal:"DSports",arg:false},
-  {f:"16/06",dia:"MAR",hora:"19:00",nota:"",a:"Irak",b:"Noruega",canal:"DSports 2 / TyC",arg:false},
-  {f:"16/06",dia:"MAR",hora:"22:00",nota:"",a:"Argentina",b:"Argelia",canal:"DSports / TyC / Disney+ / TVP / Telefe",arg:true},
-  {f:"16/06",dia:"MAR",hora:"01:00",nota:"madrugada mié.",a:"Austria",b:"Jordania",canal:"DSports / TyC",arg:false},
-  {f:"17/06",dia:"MIÉ",hora:"14:00",nota:"",a:"Portugal",b:"Congo",canal:"DSports",arg:false},
-  {f:"17/06",dia:"MIÉ",hora:"17:00",nota:"",a:"Inglaterra",b:"Croacia",canal:"DSports / TyC / Telefe / Disney+",arg:false},
-  {f:"17/06",dia:"MIÉ",hora:"20:00",nota:"",a:"Ghana",b:"Panamá",canal:"DSports 2 / TyC",arg:false},
-  {f:"17/06",dia:"MIÉ",hora:"23:00",nota:"",a:"Uzbekistán",b:"Colombia",canal:"DSports / TyC",arg:false},
-  {f:"18/06",dia:"JUE",hora:"13:00",nota:"",a:"Rep. Checa",b:"Sudáfrica",canal:"DSports / TyC",arg:false},
-  {f:"18/06",dia:"JUE",hora:"16:00",nota:"",a:"Suiza",b:"Bosnia",canal:"DSports / Telefe / Disney+",arg:false},
-  {f:"18/06",dia:"JUE",hora:"19:00",nota:"",a:"Canadá",b:"Qatar",canal:"DSports",arg:false},
-  {f:"18/06",dia:"JUE",hora:"22:00",nota:"",a:"México",b:"Corea del Sur",canal:"DSports / TyC",arg:false},
-  {f:"19/06",dia:"VIE",hora:"16:00",nota:"",a:"Estados Unidos",b:"Australia",canal:"DSports / TyC",arg:false},
-  {f:"19/06",dia:"VIE",hora:"19:00",nota:"",a:"Escocia",b:"Marruecos",canal:"DSports / Telefe / Disney+",arg:false},
-  {f:"19/06",dia:"VIE",hora:"21:30",nota:"",a:"Brasil",b:"Haití",canal:"DSports / TyC",arg:false},
-  {f:"19/06",dia:"VIE",hora:"24:00",nota:"",a:"Turquía",b:"Paraguay",canal:"DSports",arg:false},
-  {f:"20/06",dia:"SÁB",hora:"14:00",nota:"",a:"Países Bajos",b:"Suecia",canal:"DSports / TyC",arg:false},
-  {f:"20/06",dia:"SÁB",hora:"17:00",nota:"",a:"Alemania",b:"Costa de Marfil",canal:"DSports / TyC / Telefe / Disney+",arg:false},
-  {f:"20/06",dia:"SÁB",hora:"21:00",nota:"",a:"Ecuador",b:"Curazao",canal:"DSports",arg:false},
-  {f:"20/06",dia:"SÁB",hora:"01:00",nota:"madrugada dom.",a:"Túnez",b:"Japón",canal:"DSports",arg:false},
-  {f:"21/06",dia:"DOM",hora:"13:00",nota:"",a:"España",b:"Arabia Saudita",canal:"DSports / TyC / Telefe / Disney+",arg:false},
-  {f:"21/06",dia:"DOM",hora:"16:00",nota:"",a:"Bélgica",b:"Irán",canal:"DSports 2",arg:false},
-  {f:"21/06",dia:"DOM",hora:"19:00",nota:"",a:"Uruguay",b:"Cabo Verde",canal:"DSports / Telefe / Disney+",arg:false},
-  {f:"21/06",dia:"DOM",hora:"22:00",nota:"",a:"Nueva Zelanda",b:"Egipto",canal:"DSports / TyC",arg:false},
-  {f:"22/06",dia:"LUN",hora:"14:00",nota:"",a:"Argentina",b:"Austria",canal:"DSports / TyC / TVP / Telefe / Disney+",arg:true},
-  {f:"22/06",dia:"LUN",hora:"18:00",nota:"",a:"Francia",b:"Irak",canal:"DSports",arg:false},
-  {f:"22/06",dia:"LUN",hora:"21:00",nota:"",a:"Noruega",b:"Senegal",canal:"DSports / TyC",arg:false},
-  {f:"22/06",dia:"LUN",hora:"24:00",nota:"",a:"Jordania",b:"Argelia",canal:"DSports",arg:false},
-  {f:"23/06",dia:"MAR",hora:"14:00",nota:"",a:"Portugal",b:"Uzbekistán",canal:"DSports / TyC / Telefe / Disney+",arg:false},
-  {f:"23/06",dia:"MAR",hora:"17:00",nota:"",a:"Inglaterra",b:"Ghana",canal:"DSports / TyC / Telefe / Disney+",arg:false},
-  {f:"23/06",dia:"MAR",hora:"20:00",nota:"",a:"Panamá",b:"Croacia",canal:"DSports 2 / TyC",arg:false},
-  {f:"23/06",dia:"MAR",hora:"23:00",nota:"",a:"Colombia",b:"Congo",canal:"DSports",arg:false},
-  {f:"24/06",dia:"MIÉ",hora:"16:00",nota:"",a:"Suiza",b:"Canadá",canal:"DSports / TyC",arg:false},
-  {f:"24/06",dia:"MIÉ",hora:"16:00",nota:"",a:"Bosnia",b:"Qatar",canal:"DSports 2",arg:false},
-  {f:"24/06",dia:"MIÉ",hora:"19:00",nota:"",a:"Escocia",b:"Brasil",canal:"DSports / Telefe / Disney+",arg:false},
-  {f:"24/06",dia:"MIÉ",hora:"19:00",nota:"",a:"Marruecos",b:"Haití",canal:"DSports+ / TyC",arg:false},
-  {f:"24/06",dia:"MIÉ",hora:"22:00",nota:"",a:"Rep. Checa",b:"México",canal:"DSports",arg:false},
-  {f:"24/06",dia:"MIÉ",hora:"22:00",nota:"",a:"Sudáfrica",b:"Corea del Sur",canal:"DSports+ / TyC",arg:false},
-  {f:"25/06",dia:"JUE",hora:"17:00",nota:"",a:"Ecuador",b:"Alemania",canal:"DSports / TyC / Telefe / Disney+",arg:false},
-  {f:"25/06",dia:"JUE",hora:"17:00",nota:"",a:"Curazao",b:"Costa de Marfil",canal:"DSports 2",arg:false},
-  {f:"25/06",dia:"JUE",hora:"20:00",nota:"",a:"Túnez",b:"Países Bajos",canal:"DSports / TVP",arg:false},
-  {f:"25/06",dia:"JUE",hora:"20:00",nota:"",a:"Japón",b:"Suecia",canal:"DSports+ / TyC",arg:false},
-  {f:"25/06",dia:"JUE",hora:"23:00",nota:"",a:"Turquía",b:"Estados Unidos",canal:"DSports / TyC",arg:false},
-  {f:"25/06",dia:"JUE",hora:"23:00",nota:"",a:"Paraguay",b:"Australia",canal:"DSports 2 / Telefe / Disney+",arg:false},
-  {f:"26/06",dia:"VIE",hora:"16:00",nota:"",a:"Noruega",b:"Francia",canal:"DSports / TyC / Telefe / Disney+",arg:false},
-  {f:"26/06",dia:"VIE",hora:"16:00",nota:"",a:"Senegal",b:"Irak",canal:"DSports 2",arg:false},
-  {f:"26/06",dia:"VIE",hora:"21:00",nota:"",a:"Uruguay",b:"España",canal:"DSports / TyC / Telefe / Disney+",arg:false},
-  {f:"26/06",dia:"VIE",hora:"21:00",nota:"",a:"Cabo Verde",b:"Arabia Saudita",canal:"DSports 2",arg:false},
-  {f:"26/06",dia:"VIE",hora:"24:00",nota:"",a:"Nueva Zelanda",b:"Bélgica",canal:"DSports",arg:false},
-  {f:"26/06",dia:"VIE",hora:"24:00",nota:"",a:"Egipto",b:"Irán",canal:"DSports+ / TyC",arg:false},
-  {f:"27/06",dia:"SÁB",hora:"18:00",nota:"",a:"Panamá",b:"Inglaterra",canal:"DSports / TyC / TVP",arg:false},
-  {f:"27/06",dia:"SÁB",hora:"18:00",nota:"",a:"Croacia",b:"Ghana",canal:"DSports+ / Eventos",arg:false},
-  {f:"27/06",dia:"SÁB",hora:"20:30",nota:"",a:"Colombia",b:"Portugal",canal:"DSports 2",arg:false},
-  {f:"27/06",dia:"SÁB",hora:"20:30",nota:"",a:"Congo",b:"Uzbekistán",canal:"DSports+ / TyC",arg:false},
-  {f:"27/06",dia:"SÁB",hora:"23:00",nota:"",a:"Jordania",b:"Argentina",canal:"DSports / TyC / TVP / Telefe / Disney+",arg:true},
-  {f:"27/06",dia:"SÁB",hora:"23:00",nota:"",a:"Argelia",b:"Austria",canal:"DSports+ / Eventos",arg:false}
-];
+// Diccionario inverso: displayName ESPN → nombre español
+var ESPN_TO_ES = {};
+var ABBR_TO_ES = {};
+Object.keys(TEAMS).forEach(function(es){
+  ESPN_TO_ES[TEAMS[es].en] = es;
+  ABBR_TO_ES[TEAMS[es].abbr] = es;
+});
 
-// ========== FECHAS ==========
-var FECHAS_GRUPO = [];
-for (var d = 11; d <= 27; d++) {
-  var fecha = new Date(2026, 5, d);
-  var dias = ["DOM","LUN","MAR","MIÉ","JUE","VIE","SÁB"];
-  var ff = String(d).padStart(2,'0') + "/06";
-  FECHAS_GRUPO.push({
-    fecha: ff, num: d, dia: dias[fecha.getDay()], mes: "JUN",
-    tieneArg: FIXTURE.some(function(m){return m.f===ff && m.arg}),
-    tienePartidos: FIXTURE.some(function(m){return m.f===ff})
-  });
-}
+// ========== FECHAS ELIMINATORIAS ==========
+var FECHAS = [
+  {fecha:"28/06",num:28,dia:"DOM",mes:"JUN"},
+  {fecha:"29/06",num:29,dia:"LUN",mes:"JUN"},
+  {fecha:"30/06",num:30,dia:"MAR",mes:"JUN"},
+  {fecha:"01/07",num:1,dia:"MIÉ",mes:"JUL"},
+  {fecha:"02/07",num:2,dia:"JUE",mes:"JUL"},
+  {fecha:"03/07",num:3,dia:"VIE",mes:"JUL"},
+  {fecha:"04/07",num:4,dia:"SÁB",mes:"JUL"},
+  {fecha:"05/07",num:5,dia:"DOM",mes:"JUL"},
+  {fecha:"06/07",num:6,dia:"LUN",mes:"JUL"},
+  {fecha:"07/07",num:7,dia:"MAR",mes:"JUL"},
+  {fecha:"09/07",num:9,dia:"JUE",mes:"JUL"},
+  {fecha:"10/07",num:10,dia:"VIE",mes:"JUL"},
+  {fecha:"11/07",num:11,dia:"SÁB",mes:"JUL"},
+  {fecha:"14/07",num:14,dia:"MAR",mes:"JUL"},
+  {fecha:"15/07",num:15,dia:"MIÉ",mes:"JUL"},
+  {fecha:"18/07",num:18,dia:"SÁB",mes:"JUL"},
+  {fecha:"19/07",num:19,dia:"DOM",mes:"JUL"}
+];
+var fechasConArg = {};
 
 // ========== ESTADO ==========
 var selectedDate = null;
 var espnEvents = [];
+var canalesCSV = {};
 var currentSlide = 0;
 var ESPN_URL = 'https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard';
+var CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQrkxNc96pjS1qmFJ0PQ1esEExZ_t6T5B12_Nsd_zIkkms9xHGc75SjVyaTO1Uwq-O0UPiQPSsIMcZv/pub?gid=218177988&single=true&output=csv';
 
-function flagUrl(team) {
-  var t = TEAMS[team];
+// ========== UTILIDADES ==========
+function translateTeam(displayName) {
+  return ESPN_TO_ES[displayName] || displayName;
+}
+
+function flagUrl(teamES) {
+  var t = TEAMS[teamES];
   return t ? 'https://flagcdn.com/w80/' + t.code + '.png' : '';
 }
 
-function getGroup(a, b) {
-  return (TEAMS[a] && TEAMS[a].group) || (TEAMS[b] && TEAMS[b].group) || '?';
+function flagUrlFromAbbr(abbr) {
+  var es = ABBR_TO_ES[abbr];
+  return es ? flagUrl(es) : '';
+}
+
+// ========== CSV CANALES ==========
+function parseCSV(text) {
+  var lines = text.split('\n');
+  canalesCSV = {};
+  for (var i = 1; i < lines.length; i++) {
+    var cols = lines[i].split(',');
+    if (cols.length < 7) continue;
+    var fecha = cols[0].trim();
+    var hora = cols[2].trim();
+    var canal = cols[6].trim();
+    if (fecha && hora && canal) {
+      canalesCSV[fecha + '-' + hora] = canal;
+    }
+  }
+}
+
+function fetchCanales() {
+  fetch(CSV_URL)
+    .then(function(r){ return r.text(); })
+    .then(function(text){ parseCSV(text); renderMatches(); })
+    .catch(function(e){ console.log('CSV canales no disponible'); });
 }
 
 // ========== DATES ==========
 function renderDates() {
   var c = document.getElementById('ep-dates');
   var html = '', lastMes = '';
-  for (var i = 0; i < FECHAS_GRUPO.length; i++) {
-    var f = FECHAS_GRUPO[i];
-    if (!f.tienePartidos) continue;
+  for (var i = 0; i < FECHAS.length; i++) {
+    var f = FECHAS[i];
     if (f.mes !== lastMes) { html += '<div class="ep-month-sep">' + f.mes + '</div>'; lastMes = f.mes; }
-    var cls = (selectedDate === f.fecha ? ' active' : '') + (f.tieneArg ? ' has-arg' : '');
+    var cls = (selectedDate === f.fecha ? ' active' : '') + (fechasConArg[f.fecha] ? ' has-arg' : '');
     html += '<button class="ep-date-btn' + cls + '" data-fecha="' + f.fecha + '">' +
       '<span class="ep-date-day">' + f.dia + '</span><span class="ep-date-num">' + f.num + '</span></button>';
   }
@@ -173,6 +144,7 @@ function renderDates() {
     btn.addEventListener('click', function() {
       selectedDate = btn.dataset.fecha;
       currentSlide = 0;
+      espnEvents = [];
       renderDates();
       renderMatches();
       fetchESPN(selectedDate);
@@ -181,71 +153,163 @@ function renderDates() {
   });
 }
 
-// ========== ESPN MATCHING ==========
-function findESPNMatch(teamA, teamB) {
-  var abbrA = TEAMS[teamA] ? TEAMS[teamA].abbr : '';
-  var abbrB = TEAMS[teamB] ? TEAMS[teamB].abbr : '';
-  if (!abbrA || !abbrB) return null;
+// ========== ESPN ==========
+function dateToESPN(dateStr) {
+  var parts = dateStr.split('/');
+  return '2026' + parts[1] + parts[0];
+}
 
+function fetchESPN(dateStr) {
+  var cacheKey = 'ep-mundial-espn-' + dateStr;
+  var url = ESPN_URL + '?dates=' + dateToESPN(dateStr);
+  fetch(url)
+    .then(function(res){ return res.json(); })
+    .then(function(data) {
+      if (data.events && Array.isArray(data.events)) {
+        espnEvents = data.events;
+        try { localStorage.setItem(cacheKey, JSON.stringify(data.events)); } catch(e) {}
+        renderMatches();
+      }
+    })
+    .catch(function(e){ console.log('ESPN no disponible'); });
+}
+
+// ========== RENDER MATCHES ==========
+function getFase(altGameNote) {
+  if (!altGameNote) return '';
+  var note = altGameNote.toLowerCase();
+  if (note.indexOf('round of 32') >= 0) return 'Dieciseisavos';
+  if (note.indexOf('round of 16') >= 0) return 'Octavos';
+  if (note.indexOf('quarterfinal') >= 0) return 'Cuartos';
+  if (note.indexOf('semifinal') >= 0) return 'Semifinal';
+  if (note.indexOf('third') >= 0) return '3er puesto';
+  if (note.indexOf('final') >= 0) return 'Final';
+  return altGameNote;
+}
+
+function renderMatches() {
+  var carousel = document.getElementById('ep-carousel');
+
+  if (!espnEvents.length) {
+    carousel.innerHTML = '<div class="ep-empty">Cargando partidos...</div>';
+    document.getElementById('ep-dots').innerHTML = '';
+    return;
+  }
+
+  var html = '';
   for (var i = 0; i < espnEvents.length; i++) {
-    var comp = espnEvents[i].competitions[0];
-    var abbrs = comp.competitors.map(function(c){return c.team.abbreviation});
-    if (abbrs.indexOf(abbrA) >= 0 && abbrs.indexOf(abbrB) >= 0) return espnEvents[i];
+    var ev = espnEvents[i];
+    var comp = ev.competitions[0];
+    var st = comp.status.type;
+    var home = comp.competitors.find(function(c){return c.homeAway==='home'});
+    var away = comp.competitors.find(function(c){return c.homeAway==='away'});
+    var homeES = translateTeam(home.team.displayName);
+    var awayES = translateTeam(away.team.displayName);
+    var venue = comp.venue && comp.venue.address ? comp.venue.address.city : '';
+    var fase = getFase(comp.altGameNote || '');
+    var isArg = home.team.abbreviation === 'ARG' || away.team.abbreviation === 'ARG';
+    if (isArg) fechasConArg[selectedDate] = true;
+
+    // Buscar canal en CSV por fecha+hora
+    var matchDate = selectedDate;
+    // Extraer hora del evento ESPN (UTC) convertida a ARG ya viene en el CSV
+    // Matchear por fecha + hora del CSV
+    var canal = '';
+    var keys = Object.keys(canalesCSV);
+    for (var k = 0; k < keys.length; k++) {
+      if (keys[k].indexOf(matchDate + '-') === 0) {
+        // Hay un canal para esta fecha, verificar si matchea por equipos
+        // Como puede haber varios partidos a la misma hora, mejor matchear por fecha+hora
+        // y confiar en que no hay duplicados exactos
+        canal = canalesCSV[keys[k]];
+        // Solo lo asignamos si es el partido correcto — necesitamos matchear mejor
+        break;
+      }
+    }
+    // Mejor approach: buscar canal por fecha + hora del fixture del CSV
+    // Para eso necesitamos saber la hora ARG del partido desde ESPN
+    // ESPN da la hora en UTC, convertimos a ARG (UTC-3)
+    var eventDate = new Date(comp.date);
+    var argHours = eventDate.getUTCHours() - 3;
+    if (argHours < 0) argHours += 24;
+    var argMins = eventDate.getUTCMinutes();
+    var horaARG = String(argHours).padStart(2,'0') + ':' + String(argMins).padStart(2,'0');
+    canal = canalesCSV[matchDate + '-' + horaARG] || '';
+
+    // Card class
+    var cardClass = 'ep-card';
+    if (isArg) cardClass += ' argentina';
+    if (st.state === 'in') cardClass += ' en-vivo';
+    if (st.completed) cardClass += ' finalizado';
+
+    // Estado
+    var estadoHtml = '';
+    if (st.state === 'in') {
+      var detail = st.detail || '';
+      var statusText = detail === 'HT' ? 'Entretiempo' : comp.status.displayClock || '';
+      estadoHtml = '<span class="ep-card-estado en-vivo">&#9679; EN VIVO - ' + statusText + '</span>';
+    } else if (st.completed) {
+      estadoHtml = '<span class="ep-card-estado">FINALIZADO</span>';
+    }
+
+    // Centro: hora o score
+    var centerHtml = '';
+    if (st.state === 'pre') {
+      centerHtml = '<span class="ep-hora">' + horaARG + '</span>';
+    } else {
+      centerHtml = '<span class="ep-score">' + home.score + ' - ' + away.score + '</span>';
+    }
+    if (venue) centerHtml += '<span class="ep-sede">' + venue + '</span>';
+
+    // Goles
+    var golesHtml = '';
+    if (st.state !== 'pre' && comp.details && comp.details.length) {
+      var golesHome = parseGoalsESPN(comp.details, home.team.id, homeES);
+      var golesAway = parseGoalsESPN(comp.details, away.team.id, awayES);
+      var parts = [];
+      if (golesHome) parts.push(golesHome);
+      if (golesAway) parts.push(golesAway);
+      if (parts.length) golesHtml = '<div class="ep-card-goles">' + parts.join(' | ') + '</div>';
+    }
+
+    // Canal
+    var canalHtml = canal ? '<span class="ep-card-canal">' + canal + '</span>' : '';
+
+    html += '<div class="' + cardClass + '">' +
+      '<div class="ep-card-top">' +
+        '<span class="ep-card-grupo">' + fase + '</span>' +
+        estadoHtml +
+      '</div>' +
+      '<div class="ep-card-body">' +
+        '<div class="ep-team">' +
+          '<img class="ep-team-flag" src="' + (flagUrl(homeES) || flagUrlFromAbbr(home.team.abbreviation)) + '" alt="' + homeES + '" onerror="this.style.display=\'none\'">' +
+          '<span class="ep-team-name">' + homeES + '</span>' +
+        '</div>' +
+        '<div class="ep-score-box">' + centerHtml + '</div>' +
+        '<div class="ep-team">' +
+          '<img class="ep-team-flag" src="' + (flagUrl(awayES) || flagUrlFromAbbr(away.team.abbreviation)) + '" alt="' + awayES + '" onerror="this.style.display=\'none\'">' +
+          '<span class="ep-team-name">' + awayES + '</span>' +
+        '</div>' +
+      '</div>' +
+      '<div class="ep-card-bottom">' +
+        canalHtml +
+        golesHtml +
+      '</div>' +
+    '</div>';
   }
-  return null;
+
+  carousel.innerHTML = html;
+  renderDots(espnEvents.length);
+  scrollToSlide(0, false);
+  setupCarouselObserver();
+  // Actualizar rayita dorada en barra de fechas
+  var btns = document.querySelectorAll('.ep-date-btn');
+  btns.forEach(function(btn){
+    if (fechasConArg[btn.dataset.fecha]) btn.classList.add('has-arg');
+  });
 }
 
-function getMatchInfo(espnEvent) {
-  if (!espnEvent) return {status:'proximo'};
-  var comp = espnEvent.competitions[0];
-  var st = comp.status.type;
-  var home = comp.competitors.find(function(c){return c.homeAway==='home'});
-  var away = comp.competitors.find(function(c){return c.homeAway==='away'});
-  var venue = comp.venue && comp.venue.address ? comp.venue.address.city : '';
-
-  var result = {
-    homeAbbr: home.team.abbreviation,
-    awayAbbr: away.team.abbreviation,
-    homeScore: home.score,
-    awayScore: away.score,
-    venue: venue,
-    details: comp.details || []
-  };
-
-  if (st.completed) {
-    result.status = 'finalizado';
-    result.statusText = 'FINALIZADO';
-  } else if (st.state === 'in') {
-    result.status = 'envivo';
-    var detail = st.detail || '';
-    result.statusText = detail === 'HT' ? 'Entretiempo' : comp.status.displayClock || '';
-  } else {
-    result.status = 'proximo';
-  }
-  return result;
-}
-
-function getScoreForTeam(info, teamName) {
-  var abbr = TEAMS[teamName] ? TEAMS[teamName].abbr : '';
-  if (info.homeAbbr === abbr) return info.homeScore;
-  if (info.awayAbbr === abbr) return info.awayScore;
-  return '';
-}
-
-function getTeamIdFromESPN(espnEvent, teamName) {
-  if (!espnEvent) return '';
-  var abbr = TEAMS[teamName] ? TEAMS[teamName].abbr : '';
-  var comp = espnEvent.competitions[0];
-  var found = comp.competitors.find(function(c){return c.team.abbreviation===abbr});
-  return found ? found.team.id : '';
-}
-
-function parseGoals(espnEvent, teamName) {
-  if (!espnEvent) return '';
-  var teamId = getTeamIdFromESPN(espnEvent, teamName);
-  if (!teamId) return '';
-  var comp = espnEvent.competitions[0];
-  var details = comp.details || [];
+function parseGoalsESPN(details, teamId, teamName) {
   var goals = [];
   for (var i = 0; i < details.length; i++) {
     var d = details[i];
@@ -260,89 +324,6 @@ function parseGoals(espnEvent, teamName) {
   }
   if (!goals.length) return '';
   return teamName + ': ' + goals.join(', ');
-}
-
-// ========== RENDER MATCHES ==========
-function renderMatches() {
-  var carousel = document.getElementById('ep-carousel');
-  var matches = FIXTURE.filter(function(m){return m.f === selectedDate});
-
-  if (!matches.length) {
-    carousel.innerHTML = '<div class="ep-empty">No hay partidos en esta fecha</div>';
-    document.getElementById('ep-dots').innerHTML = '';
-    return;
-  }
-
-  var html = '';
-  for (var i = 0; i < matches.length; i++) {
-    var m = matches[i];
-    var grupo = getGroup(m.a, m.b);
-    var espn = findESPNMatch(m.a, m.b);
-    var info = getMatchInfo(espn);
-
-    var cardClass = 'ep-card';
-    if (m.arg) cardClass += ' argentina';
-    if (info.status === 'envivo') cardClass += ' en-vivo';
-    if (info.status === 'finalizado') cardClass += ' finalizado';
-
-    var estadoHtml = '';
-    if (info.status === 'envivo') {
-      var extra = info.statusText ? ' - ' + info.statusText : '';
-      estadoHtml = '<span class="ep-card-estado en-vivo">&#9679; EN VIVO' + extra + '</span>';
-    } else if (info.status === 'finalizado') {
-      estadoHtml = '<span class="ep-card-estado">' + info.statusText + '</span>';
-    }
-
-    var centerHtml = '';
-    if (info.status === 'proximo') {
-      centerHtml = '<span class="ep-hora">' + m.hora + '</span>';
-      if (m.nota) centerHtml += '<span class="ep-hora-nota">' + m.nota + '</span>';
-    } else {
-      var sA = getScoreForTeam(info, m.a);
-      var sB = getScoreForTeam(info, m.b);
-      centerHtml = '<span class="ep-score">' + sA + ' - ' + sB + '</span>';
-    }
-
-    if (info.venue) {
-      centerHtml += '<span class="ep-sede">' + info.venue + '</span>';
-    }
-
-    var golesHtml = '';
-    if (info.status !== 'proximo' && espn) {
-      var gA = parseGoals(espn, m.a);
-      var gB = parseGoals(espn, m.b);
-      var parts = [];
-      if (gA) parts.push(gA);
-      if (gB) parts.push(gB);
-      if (parts.length) golesHtml = '<div class="ep-card-goles">' + parts.join(' | ') + '</div>';
-    }
-
-    html += '<div class="' + cardClass + '">' +
-      '<div class="ep-card-top">' +
-        '<span class="ep-card-grupo">Grupo ' + grupo + '</span>' +
-        estadoHtml +
-      '</div>' +
-      '<div class="ep-card-body">' +
-        '<div class="ep-team">' +
-          '<img class="ep-team-flag" src="' + flagUrl(m.a) + '" alt="' + m.a + '" onerror="this.style.display=\'none\'">' +
-          '<span class="ep-team-name">' + m.a + '</span>' +
-        '</div>' +
-        '<div class="ep-score-box">' + centerHtml + '</div>' +
-        '<div class="ep-team">' +
-          '<img class="ep-team-flag" src="' + flagUrl(m.b) + '" alt="' + m.b + '" onerror="this.style.display=\'none\'">' +
-          '<span class="ep-team-name">' + m.b + '</span>' +
-        '</div>' +
-      '</div>' +
-      '<div class="ep-card-bottom">' +
-        '<span class="ep-card-canal">' + m.canal + '</span>' +
-        golesHtml +
-      '</div>' +
-    '</div>';
-  }
-  carousel.innerHTML = html;
-  renderDots(matches.length);
-  scrollToSlide(0, false);
-  setupCarouselObserver();
 }
 
 // ========== CAROUSEL ==========
@@ -394,44 +375,31 @@ document.getElementById('ep-arrow-right').addEventListener('click', function() {
   if (currentSlide < cards.length - 1) scrollToSlide(currentSlide + 1, true);
 });
 
-// ========== ESPN FETCH ==========
-function dateToESPN(dateStr) {
-  var parts = dateStr.split('/');
-  return '2026' + parts[1] + parts[0];
-}
-
-function fetchESPN(dateStr) {
-  var url = ESPN_URL + '?dates=' + dateToESPN(dateStr);
-  fetch(url)
-    .then(function(res){ return res.json(); })
-    .then(function(data) {
-      if (data.events && Array.isArray(data.events)) {
-        espnEvents = data.events;
-        try { localStorage.setItem('ep-mundial-espn-' + dateStr, JSON.stringify(data.events)); } catch(e) {}
-        renderMatches();
-      }
-    })
-    .catch(function(e){ console.log('ESPN no disponible'); });
-}
-
 // ========== INIT ==========
 function selectInitialDate() {
   var hoy = new Date();
   var dd = String(hoy.getDate()).padStart(2,'0');
   var mm = String(hoy.getMonth()+1).padStart(2,'0');
   var fechaHoy = dd + '/' + mm;
-  var conPartidos = FECHAS_GRUPO.filter(function(f){return f.tienePartidos});
-  var sel = conPartidos.find(function(f){return f.fecha===fechaHoy});
-  if (!sel) sel = conPartidos.find(function(f){return parseInt(f.fecha)>=parseInt(dd)});
-  if (!sel && conPartidos.length) sel = conPartidos[0];
-  selectedDate = sel ? sel.fecha : (conPartidos[0] ? conPartidos[0].fecha : '11/06');
+  var sel = FECHAS.find(function(f){return f.fecha===fechaHoy});
+  if (!sel) {
+    // Buscar próxima fecha con partidos
+    var hoyNum = parseInt(mm) * 100 + parseInt(dd);
+    sel = FECHAS.find(function(f){
+      var parts = f.fecha.split('/');
+      var fNum = parseInt(parts[1]) * 100 + parseInt(parts[0]);
+      return fNum >= hoyNum;
+    });
+  }
+  if (!sel) sel = FECHAS[FECHAS.length - 1];
+  selectedDate = sel.fecha;
 }
 
 function init() {
   selectInitialDate();
   try {
     var cached = localStorage.getItem('ep-mundial-espn-' + selectedDate);
-    if (cached) espnEvents = JSON.parse(cached);
+    if (cached) { espnEvents = JSON.parse(cached); }
   } catch(e) {}
   renderDates();
   renderMatches();
@@ -439,6 +407,7 @@ function init() {
     var ab = document.querySelector('.ep-date-btn.active');
     if (ab) ab.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
   }, 100);
+  fetchCanales();
   fetchESPN(selectedDate);
   setInterval(function(){ fetchESPN(selectedDate); }, 60000);
 }
