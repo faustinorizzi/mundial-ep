@@ -205,7 +205,7 @@ function renderMatches() {
     var away = comp.competitors.find(function(c){return c.homeAway==='away'});
     var homeES = translateTeam(home.team.displayName);
     var awayES = translateTeam(away.team.displayName);
-    var venue = comp.venue && comp.venue.address ? comp.venue.address.city : '';
+    var venue = comp.venue && comp.venue.address ? comp.venue.address.city.split(',')[0] : '';
     var fase = getFase(comp.altGameNote || '');
     var isArg = home.team.abbreviation === 'ARG' || away.team.abbreviation === 'ARG';
     if (isArg) fechasConArg[selectedDate] = true;
